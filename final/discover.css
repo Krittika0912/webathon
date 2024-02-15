@@ -1,0 +1,224 @@
+.human-body {
+    width: 207px;
+    position: relative;
+    padding-top: 240px;
+    height: 260px;
+    display: block;
+    margin: 40px auto;
+    float:right;
+    margin-right: 250px;
+}
+
+.human-body svg:hover {
+    cursor: pointer;
+}
+.main{
+    background-image: url("ladki.png");
+}
+
+
+.human-body svg:hover path {
+    fill: white;
+}
+
+.human-body svg {
+    position: absolute;
+    left: 50%;
+    fill: #292827;
+}
+
+.human-body svg#head {
+    margin-left: -28.5px;
+    top: -6px;
+}
+
+.human-body svg#left-shoulder {
+    margin-left: -53.5px;
+    top: 69px;
+}
+
+.human-body svg#right-shoulder {
+    margin-left: 13.5px;
+    top: 69px;
+}
+
+.human-body svg#left-arm {
+    margin-left: -78px;
+    top: 112px;
+}
+
+.human-body svg#right-arm {
+    margin-left: 38px;
+    top: 112px;
+    z-index: 10001;
+}
+
+.human-body svg#chest {
+    margin-left: -43.5px;
+    top: 88px;
+}
+
+.human-body svg#stomach {
+    margin-left: -37.5px;
+    top: 130px;
+}
+
+.human-body svg#left-leg {
+    margin-left: -46.5px;
+    top: 205px;
+    z-index: 9999;
+}
+
+.human-body svg#right-leg {
+    margin-left: 1.5px;
+    top: 205px;
+    z-index: 9999;
+}
+
+.human-body svg#left-hand {
+    margin-left: -102.5px;
+    top: 224px;
+}
+
+.human-body svg#right-hand {
+    margin-left: 66.5px;
+    top: 224px;
+    z-index: 10000;
+}
+
+.human-body svg#left-foot {
+    margin-left: -35.5px;
+    top: 455px;
+}
+
+.human-body svg#right-foot {
+    margin-left: 5.5px;
+    top: 455px;
+}
+
+#area {
+    display: block;
+    width: 100%;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Courier New;
+    color: #a5a5a5;
+}
+
+#area #data {
+    color: #292827;
+}
+
+
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text{
+
+    flex: 1;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+  }
+  
+  .animated-text span{
+    position: relative;
+  }
+  
+  .animated-text span::before{
+    content: "Consultant";
+    color: white;
+    animation: words 20s infinite;
+  }
+  
+  .animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #e49d7f;    /*cover */
+   
+    border-left: 2px solid white;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+  }
+  
+  @keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+  }
+  
+  @keyframes words {
+    0%,20%{
+        content: "Consultant";
+    }
+    21%,40%{
+        content: "Recommender";
+    }
+    41%,60%{
+        content: "AI Doctor";
+    }
+    61%,80%{
+        content: "Expert";
+    }
+    81%,100%{
+        content: "Specialist";
+    }
+  }
+  
+  @keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+  }
+  
+  .framwork {
+    max-width: 1000px;
+    margin: 100px auto;
+    margin-top: 0;
+    padding: 20px;
+  }
+  
+  .framwork h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .framework-text {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .framework-images {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse; /* Reverse the order for proper alignment */
+    align-items: center;
+  }
+  
+  .framework-images img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid white
+  }

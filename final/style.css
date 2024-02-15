@@ -1,0 +1,102 @@
+
+.main_box{
+  background: url("HomePage.png");
+  height: 100vh;
+ background-size: cover;
+ 
+ .splash{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index:200;
+  color: black;
+  text-align: center;
+  line-height: 90vh;
+}
+
+.splash.display-none {
+  position: fixed;
+  top: -100%; /* Updated property for slide-down effect */
+  opacity: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: -10;
+  color: black;
+  text-align: center;
+  line-height: 90vh;
+  transition: all 0.5s;
+}
+
+.splash.display-block {
+  top: 0; /* Displaying the splash screen at the top when active */
+  opacity: 1;
+}
+
+
+
+@keyframes fadeIn{
+  to{
+      opacity: 100;
+  }
+}
+.fade-in{
+  opacity: 0;
+  background-color: black;
+  animation: fadeIn 10s ease-in forwards;
+}
+#intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 36px;
+  color:black; /* Set the text color to white */
+}
+ 
+}.topnav {
+    background-color: #f9ad8d;
+    overflow: hidden;
+    justify-content: center;
+    float: right;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #c18369;
+    color: white;
+  }
+
+  body {
+    background-image: url("home1.png");
+   
+   }
+
+   .bot{
+  font-size: 20px;
+ margin-bottom: 10px;
+   }

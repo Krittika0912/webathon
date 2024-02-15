@@ -1,0 +1,37 @@
+.main{
+    background-image: url("card.png");
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card{
+    width: 325px;
+    background-color: #f98dad;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content h3{
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+ 

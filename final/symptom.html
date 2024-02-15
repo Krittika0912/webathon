@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Frontend Mentor | Multi-step form</title>
+    <link rel="stylesheet" href="symptom.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="form">
+       
+      <div class="form-container">
+        <!-- Sidebar start -->
+        <div class="form-sidebar">
+            
+          <div class="step active">
+            <div class="circle">1</div>
+            <div class="step-content">
+              <span>Step 1</span>
+              <b> personal info</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">2</div>
+            <div class="step-content">
+              <span>Step 2</span>
+              <b>Select your gender</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">3</div>
+            <div class="step-content">
+              <span>Step 3</span>
+              <b>Symptoms</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">4</div>
+            <div class="step-content">
+              <span>Step 4</span>
+              <b>Summary</b>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar end -->
+        <!-- * Step 1 start -->
+        <div class="stp step-1">
+          <div class="header">
+            <h1 class="title">Personal info</h1>
+            <p class="exp">
+              Please provide your name,gender, and age.
+            </p>
+          </div>
+          <form>
+            <div class="label">
+              <label for="name">Name</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            <input
+              required
+              type="text"
+              id="name"
+              placeholder="e.g. Stephen King"
+            />
+            <div class="label">
+              <label for="gender">Username</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            <input
+              required
+              type="text"
+              id="gender"
+              placeholder="e.g.stephen69"
+            />
+            <div class="label">
+              <label for="age">Age</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            <input
+              required
+              type="tel"
+              id="age"
+              placeholder="e.g. 27"
+            />
+          </form>
+          <div class="btns">
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 1 end -->
+        <!-- * Step 2 start -->
+        <div class="stp step-2">
+          <div class="header">
+            <h1 class="title">Select your Gender</h1>
+            
+          </div>
+          <form>
+            <div class="plan-card selected">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M289.8 46.8c3.7-9 12.5-14.8 22.2-14.8H424c13.3 0 24 10.7 24 24V168c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-33.4-33.4L321 204.2c19.5 28.4 31 62.7 31 99.8c0 97.2-78.8 176-176 176S0 401.2 0 304s78.8-176 176-176c37 0 71.4 11.4 99.8 31l52.6-52.6L295 73c-6.9-6.9-8.9-17.2-5.2-26.2zM400 80l0 0h0v0zM176 416a112 112 0 1 0 0-224 112 112 0 1 0 0 224z"/></svg>
+              <div class="plan-info chosen">
+                <b>Male</b>
+              
+              </div>
+            </div>
+            <div class="plan-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 176a112 112 0 1 1 224 0A112 112 0 1 1 80 176zM224 349.1c81.9-15 144-86.8 144-173.1C368 78.8 289.2 0 192 0S16 78.8 16 176c0 86.3 62.1 158.1 144 173.1V384H128c-17.7 0-32 14.3-32 32s14.3 32 32 32h32v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448h32c17.7 0 32-14.3 32-32s-14.3-32-32-32H224V349.1z"/></svg>
+              <div class="plan-info">
+                <b>Female</b>
+               
+              </div>
+            </div>
+            <div class="plan-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M112 0c6.5 0 12.3 3.9 14.8 9.9s1.1 12.9-3.5 17.4l-31 31L112 78.1l7-7c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-7 7 15.2 15.2C187.7 107.6 220.5 96 256 96s68.3 11.6 94.9 31.2l68.8-68.8-31-31c-4.6-4.6-5.9-11.5-3.5-17.4s8.3-9.9 14.8-9.9h96c8.8 0 16 7.2 16 16v96c0 6.5-3.9 12.3-9.9 14.8s-12.9 1.1-17.4-3.5l-31-31-68.8 68.8C404.4 187.7 416 220.5 416 256c0 80.2-59 146.6-136 158.2V432h16c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v8c0 13.3-10.7 24-24 24s-24-10.7-24-24v-8H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h16V414.2C155 402.6 96 336.2 96 256c0-35.5 11.6-68.3 31.2-94.9L112 145.9l-7 7c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l7-7L58.3 92.3l-31 31c-4.6 4.6-11.5 5.9-17.4 3.5S0 118.5 0 112V16C0 7.2 7.2 0 16 0h96zM352 256a96 96 0 1 0 -192 0 96 96 0 1 0 192 0z"/></svg>
+              <div class="plan-info">
+                <b>Others</b>
+                
+              </div>
+            </div>
+          </form>
+         
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 2 end -->
+        <!-- * Step 3 start -->
+        <div class="stp step-3">
+          <div class="header">
+            <h1 class="title">Add symptoms</h1>
+            <div class="label">
+                <br>
+                
+                <br>
+               
+                
+              </div>
+              <h3>Tell me your Symptoms?</h3>
+              <input
+                required
+                type="text"
+                id="symp"
+                placeholder="e.g. cough,cold etc"
+              />
+
+              <br>
+              <br>
+              <h3>Any previous symptoms</h3>
+              <input
+                required
+                type="text"
+                id="symp"
+                placeholder="e.g. cough,cold etc"
+              />
+          </div>
+
+          
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 3 end -->
+        <!-- * Step 4 start -->
+        <div class="stp step-4">
+          <div class="header">
+            <h1 class="title">Recommended tests are</h1>
+           
+          <div class="selection-box">
+            <div class="selection-container">
+              <div class="selected-plan">
+                <p class="plan-name">.</p>
+                <p class="plan-price">.</p>
+              </div>
+              <hr />
+              <div class="addons">
+                <template>
+                  <div class="selected-addon">
+                    <span class="service-name">.</span>
+                    <span class="servic-price">.</span>
+                  </div>
+                </template>
+              </div>
+            </div>
+            <p class="total">.<b>.</b></p>
+          </div>
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 4 end -->
+        <!-- Step 5 start -->
+        <div class="stp step-5">
+          <img src="./assets/images/icon-thank-you.svg" alt="" />
+          <div class="header">
+            <h1 class="title">Thank you!</h1>
+            <p class="exp">
+              Thanks for confirming your subscription! We hope you have fun
+              using our platform. If you ever need support, please feel free to
+              email us at support@loremgaming.com.
+            </p>
+          </div>
+          <button class="next-stp"></button>
+        </div>
+        <!-- Step 5 end -->
+      </div>
+    </div>
+  </body>
+</html>
